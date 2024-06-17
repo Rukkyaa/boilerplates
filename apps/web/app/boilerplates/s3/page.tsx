@@ -1,10 +1,10 @@
-import { s3ModuleCode } from "../../codes/s3-module.code";
-import { s3ServiceCode } from "../../codes/s3-service.code";
+import { s3ModuleCode } from "../../codes/s3/s3-module.code";
+import { s3ServiceCode } from "../../codes/s3/s3-service.code";
 import CodeBlock from "../../components/CodeBlock";
 
 export default function S3Boilerplate() {
   return (
-    <div className="my-[2rem] flex flex-col items-center gap-y-[1.5rem]">
+    <div className="flex flex-col items-center gap-y-[1.5rem]">
       <h1 className="text-4xl font-bold text-white">S3 Boilerplate</h1>
       <p className="text-lg text-white">
         This is a boilerplate for using AWS S3 with NestJS.

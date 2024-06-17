@@ -1,24 +1,18 @@
-import { s3ModuleCode } from "./codes/s3-module.code";
-import { s3ServiceCode } from "./codes/s3-service.code";
-import CodeBlock from "./components/CodeBlock";
-
 export default function Home() {
   return (
-    <div className="bg-[#10002b] flex flex-col items-center gap-y-[1rem]">
-      <h1 className="text-4xl font-bold text-white">S3 Boilerplate</h1>
-      <p className="text-lg text-white">
-        This is a boilerplate for using AWS S3 with NestJS.
-      </p>
-      <CodeBlock
-        code={s3ModuleCode}
-        filename="/src/shared/s3/s3.module.ts"
-        language="typescript"
-      />
-      <CodeBlock
-        code={s3ServiceCode}
-        filename="/src/shared/s3/s3.service.ts"
-        language="typescript"
-      />
+    <div className="flex flex-col items-center gap-y-[1rem]">
+      <h1 className="text-4xl font-bold text-white">Boilerplates</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[1rem] gap-x-[1rem]">
+        <a
+          href="/boilerplates/s3"
+          className="flex flex-col items-center gap-y-[0.5rem] rounded-lg p-[1rem] text-white bg-[#9d4edd] hover:bg-[#c77dff]"
+        >
+          <div className="text-2xl font-bold">S3 Boilerplate</div>
+          <p className="text-lg">
+            This is a boilerplate for using AWS S3 with NestJS.
+          </p>
+        </a>
+      </div>
     </div>
   );
 }

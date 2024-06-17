@@ -5,6 +5,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[1rem] gap-x-[1rem]">
         <a
           href="/boilerplates/s3"
+          target="_blank"
           className="flex flex-col items-center gap-y-[0.5rem] rounded-lg p-[1rem] text-white bg-[#9d4edd] hover:bg-[#c77dff]"
         >
           <div className="text-2xl font-bold">S3 Boilerplate</div>
@@ -14,6 +15,7 @@ export default function Home() {
         </a>
         <a
           href="/boilerplates/brevo"
+          target="_blank"
           className="flex flex-col items-center gap-y-[0.5rem] rounded-lg p-[1rem] text-white bg-[#9d4edd] hover:bg-[#c77dff]"
         >
           <div className="text-2xl font-bold">Brevo Boilerplate</div>

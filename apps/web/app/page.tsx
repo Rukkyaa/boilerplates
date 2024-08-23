@@ -33,6 +33,16 @@ export default function Home() {
             This is a boilerplate to setup NextAuth with NextJS (App Router).
           </p>
         </a>
+        <a
+          href="/boilerplates/adonis/auth"
+          target="_blank"
+          className="flex flex-col items-center gap-y-[0.5rem] rounded-lg p-[1rem] text-white bg-[#9d4edd] hover:bg-[#c77dff]"
+        >
+          <div className="text-2xl font-bold">Adonis (V6) Auth Boilerplate</div>
+          <p className="text-lg">
+            This is a boilerplate to setup Adonis Auth with @adonisjs/auth.
+          </p>
+        </a>
       </div>
     </div>
   );

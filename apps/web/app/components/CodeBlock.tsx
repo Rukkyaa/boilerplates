@@ -8,14 +8,16 @@ import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 interface ICodeBlockProps {
   code: string;
   filename: string;
-  language: "typescript" | "tsx" | "markdown";
+  language: "typescript" | "tsx" | "markdown" | "text";
+  description?: string;
 }
 
-const CodeBlock = ({ code, filename, language }: ICodeBlockProps) => {
+const CodeBlock = ({ code, filename, language, description }: ICodeBlockProps) => {
   const [copy, setCopy] = useState(false);
 
   return (
     <div className="w-1/2 rounded-md overflow-hidden">
+      {description && <p className="text-sm pb-2">{description}</p>}
       <div className="flex flex-row justify-between px-[1rem] bg-[#5a189a] py-[.5rem] text-white text-xs items-center">
         <code className="text-[.875rem]">{filename}</code>
         <button

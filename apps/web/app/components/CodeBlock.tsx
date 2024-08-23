@@ -8,7 +8,7 @@ import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 interface ICodeBlockProps {
   code: string;
   filename: string;
-  language: "typescript" | "tsx";
+  language: "typescript" | "tsx" | "markdown";
 }
 
 const CodeBlock = ({ code, filename, language }: ICodeBlockProps) => {

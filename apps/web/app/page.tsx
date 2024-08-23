@@ -23,6 +23,16 @@ export default function Home() {
             This is a boilerplate for using Brevo with NestJS.
           </p>
         </a>
+        <a
+          href="/boilerplates/next/auth"
+          target="_blank"
+          className="flex flex-col items-center gap-y-[0.5rem] rounded-lg p-[1rem] text-white bg-[#9d4edd] hover:bg-[#c77dff]"
+        >
+          <div className="text-2xl font-bold">Next Auth Boilerplate</div>
+          <p className="text-lg">
+            This is a boilerplate to setup NextAuth with NextJS (App Router).
+          </p>
+        </a>
       </div>
     </div>
   );

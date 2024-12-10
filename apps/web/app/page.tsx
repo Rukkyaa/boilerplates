@@ -34,6 +34,16 @@ export default function Home() {
           </p>
         </a>
         <a
+          href="/boilerplates/next/brevo"
+          target="_blank"
+          className="flex flex-col items-center gap-y-[0.5rem] rounded-lg p-[1rem] text-white bg-[#9d4edd] hover:bg-[#c77dff]"
+        >
+          <div className="text-2xl font-bold">Next Brevo Boilerplate</div>
+          <p className="text-lg">
+            This is a boilerplate to setup Brevo with NextJS (App Router).
+          </p>
+        </a>
+        <a
           href="/boilerplates/adonis/auth"
           target="_blank"
           className="flex flex-col items-center gap-y-[0.5rem] rounded-lg p-[1rem] text-white bg-[#9d4edd] hover:bg-[#c77dff]"
